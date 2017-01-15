@@ -1,6 +1,6 @@
 {
   "name": "Homework 1",
-  "endpoint": "cal/data100/sp17/demo/assignments/buildfiles/build/sp17/hw/hw1",
+  "endpoint": "cal/data100/sp17/hw1",
   "src": [
     "hw1.ipynb"
   ],
