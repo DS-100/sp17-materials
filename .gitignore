@@ -87,3 +87,11 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# OkPy
+.ok_messages
