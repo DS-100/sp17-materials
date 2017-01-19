@@ -6,9 +6,13 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> np.allclose(expand_image_range(test_im), [37, 65, 89])
+          >>> expand_image_range(test_im).shape
+          (1, 1, 3)
+          >>> expanded1.shape
+          (240, 215, 3)
+          >>> np.allclose(expand_image_range(test_im), res_im)
           True
-          >>> np.allclose(expand_image_range(test_im + 5), [162, 187, 214])
+          >>> np.allclose(expand_image_range(test_im + 5), res_im2)
           True
           >>> np.allclose(expanded1[100][100], [187, 187, 214])
           True
@@ -26,6 +30,9 @@ test = {
       ... ])
       >>> res_im = np.array([
       ...   [ [37, 65, 89] ]
+      ... ])
+      >>> res_im2 = np.array([
+      ...   [ [162, 187, 214] ]
       ... ])
       """,
       'teardown': '',
