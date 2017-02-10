@@ -1,12 +1,12 @@
 test = {
-  'name': 'Question 6',
+  'name': 'Completion',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> 1700000 < num_people_with_rare_names < 2300000
+          >>> i_finished_the_lab
           True
           """,
           'hidden': False,
