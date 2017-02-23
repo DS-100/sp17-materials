@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> connection.execute(query_q5).fetchall() == [('RUBIO, MARCO', 'RUBIO, MARCO')]
+          >>> connection.execute(query_q5).fetchall() == [('BUSH, JEB', 'RUBIO, MARCO'), ('RUBIO, MARCO', 'BUSH, JEB')]
           True                                                                       
                       """,
           'hidden': False,

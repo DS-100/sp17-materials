@@ -6,7 +6,7 @@ test = {
       'cases': [
         {  
           'code': r"""
-          >>> connection.execute(query_q1a).fetchall() == [(11,)]
+          >>> connection.execute(query_q1a).fetchall() == [(8,)]
           True                                                                       
                       """,
           'hidden': False,
