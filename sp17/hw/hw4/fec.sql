@@ -38,6 +38,7 @@ SET default_with_oids = false;
 -- Name: cand; Type: TABLE; Schema: public; Owner: sam
 --
 
+DROP TABLE IF EXISTS cand;
 CREATE TABLE cand (
     cand_id character varying(9),
     cand_name text,
@@ -63,6 +64,7 @@ CREATE TABLE cand (
 -- Name: comm; Type: TABLE; Schema: public; Owner: sam
 --
 
+DROP TABLE IF EXISTS comm;
 CREATE TABLE comm (
     cmte_id character varying(9),
     cmte_nm text,
@@ -88,6 +90,7 @@ CREATE TABLE comm (
 -- Name: indiv; Type: TABLE; Schema: public; Owner: sam
 --
 
+DROP TABLE IF EXISTS indiv;
 CREATE TABLE indiv (
     cmte_id character varying(9),
     amndt_ind character(1),
@@ -119,6 +122,7 @@ CREATE TABLE indiv (
 -- Name: indiv_sample; Type: TABLE; Schema: public; Owner: sam
 --
 
+DROP TABLE IF EXISTS indiv_sample;
 CREATE TABLE indiv_sample (
     cmte_id character varying(9),
     amndt_ind character(1),
@@ -150,6 +154,7 @@ CREATE TABLE indiv_sample (
 -- Name: inter_comm; Type: TABLE; Schema: public; Owner: sam
 --
 
+DROP TABLE IF EXISTS inter_comm;
 CREATE TABLE inter_comm (
     cmte_id character varying(9),
     amndt_ind character(1),
@@ -182,6 +187,7 @@ CREATE TABLE inter_comm (
 -- Name: link; Type: TABLE; Schema: public; Owner: sam
 --
 
+DROP TABLE IF EXISTS link;
 CREATE TABLE link (
     cand_id character varying(9),
     cand_election_yr integer,
