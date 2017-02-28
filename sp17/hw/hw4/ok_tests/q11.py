@@ -6,7 +6,12 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> connection.execute("SET SEED TO 0.42; select * from hillary_design limit 5").fetchall() == [(1,940),(1,373),(1,710),(1,1329),(1,618)]
+          >>> # Test some basic statistics about hillary_design
+          >>> connection.execute("select COUNT(*) from hillary_design").fetchall() == [(762000,)]
+          True
+          >>> len(connection.execute("select COUNT(*) from hillary_design GROUP BY trial_id").fetchall()) == 500
+          True
+          >>> len(connection.execute("select COUNT(*) from hillary_design GROUP BY row_id").fetchall()) == 1524
           True                                                                       
                       """,
           'hidden': False,

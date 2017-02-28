@@ -6,7 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> connection.execute(query_q7).fetchall() == [('HILLARY FOR AMERICA', 262923), ('BERNIE 2016', 54622)]
+          >>> student_answer = connection.execute(query_q7).fetchall()
+          >>> our_answer = [('HILLARY FOR AMERICA', 262923), ('BERNIE 2016', 54622)]
+          >>> # Tests that our two rows are the same (order doesn't matter)
+          >>> (student_answer == our_answer) or (student_answer[::-1] == our_answer)
           True                                                                       
                       """,
           'hidden': False,

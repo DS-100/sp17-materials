@@ -6,8 +6,14 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> connection.execute("SET SEED TO 0.42; select * from hillary_props limit 5").fetchall() == [(129, 0.202652581438754),(195, 0.256795653402228),(251, 0.209498565154603),(106, 0.19644614724048),(120, 0.206152464892501)]
-          True                                                                       
+          >>> # Test for correct number of trials
+          >>> trials = sorted([x[0] for x in connection.execute("select * from hillary_props").fetchall()])
+          >>> trials == list(range(1, 501))
+          True
+          >>> # Statistical test - this should almost always pass
+          >>> prop_avg = np.mean([x[1] for x in connection.execute("select * from hillary_props").fetchall()])
+          >>> 0.18 < prop_avg < 0.28
+          True
                       """,
           'hidden': False,
           'locked': False
