@@ -1,0 +1,15 @@
+{
+  "name": "Discussion 7: Probability",
+  "endpoint": "cal/data100/sp17/disc07",
+  "src": [
+    "disc07.ipynb"
+  ],
+  "tests": {
+      "ok_tests/q*.py": "ok_test"
+  },
+  "protocols": [
+      "file_contents",
+      "grading",
+      "backup"
+  ]
+}
