@@ -1,8 +1,8 @@
 {
-  "name": "Lab 6",
+  "name": "Lab 6: SQL",
   "endpoint": "cal/data100/sp17/lab06",
   "src": [
-    "lab06_master.ipynb"
+    "lab06.ipynb"
   ],
   "tests": {
       "ok_tests/q*.py": "ok_test"
