@@ -6,9 +6,9 @@ test = {
       'cases': [
         {  
           'code': r"""
-          >>> int(crawl_stats['rmse'].mean()*1000) == 68
+          >>> 65 < int(crawl_stats['rmse'].mean()*1000) < 70
           True
-          >>> int(crawl_stats['rmse'].std()*1000) == 136
+          >>> 130 < int(crawl_stats['rmse'].std()*1000) < 140
           True
                       """,
           'hidden': False,
