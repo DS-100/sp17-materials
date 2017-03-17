@@ -1,12 +1,12 @@
 test = {
-  'name': 'Question 4',
+  'name': 'Completion',
   'points': 1,
   'suites': [
     {
       'cases': [
         {  
           'code': r"""
-          >>> 2e-07 < average_scandals_per_second < 3e-07
+          >>> i_finished_the_lab
           True
           """,
           'hidden': False,
