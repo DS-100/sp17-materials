@@ -18,7 +18,7 @@ test = {
           >>> 190 < int(np.std(obs_q)) < 220
           True
           >>> # Test their interaction
-          >>> 0 < int(np.mean(pdf_q - obs_q)) < 30
+          >>> -30 < int(np.mean(pdf_q - obs_q)) < 0
           True
           >>> 20 < int(np.std(pdf_q - obs_q)) < 40
           True    
