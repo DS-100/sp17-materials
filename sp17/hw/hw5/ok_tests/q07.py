@@ -21,8 +21,7 @@ test = {
           >>> -30 < int(np.mean(pdf_q - obs_q)) < 0
           True
           >>> 20 < int(np.std(pdf_q - obs_q)) < 40
-          True    
-                      """,
+          True""",
           'hidden': False,
           'locked': False
         },

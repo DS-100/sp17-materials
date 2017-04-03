@@ -9,8 +9,7 @@ test = {
           >>> 65 < int(crawl_stats['rmse'].mean()*1000) < 70
           True
           >>> 130 < int(crawl_stats['rmse'].std()*1000) < 140
-          True
-                      """,
+          True""",
           'hidden': False,
           'locked': False
         },

@@ -15,8 +15,7 @@ test = {
           >>> true_poisson_dist = np.exp(-3*17)*np.array([(3*17)**k / math.factorial(k) for k in range(q11_num_bins_0)])
           >>> tvd = sum(np.abs(actual_dist - true_poisson_dist)) / 2
           >>> .02 < tvd < .16
-          True
-          """,
+          True""",
           'hidden': False,
           'locked': False
         },

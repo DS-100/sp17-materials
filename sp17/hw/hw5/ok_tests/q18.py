@@ -18,8 +18,7 @@ test = {
           >>> sim2 = lambda: simulate_change_rate_estimate(1, 24, lambda x, y: sum(x)/y)
           >>> simulations2 = [sim2() for _ in range(10000)]
           >>> 7.5 < np.mean(simulations2) < 8.5
-          True
-                      """,
+          True""",
           'hidden': False,
           'locked': False
         },

@@ -10,8 +10,7 @@ test = {
           >>> n == 1000
           True
           >>> set(keys) == {'number of checks', 'url', 'positive checks'}
-          True                                                                       
-                      """,
+          True""",
           'hidden': False,
           'locked': False
         },

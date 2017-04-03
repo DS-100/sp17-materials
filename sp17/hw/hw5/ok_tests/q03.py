@@ -16,8 +16,7 @@ test = {
           >>> # That's why we just check the set
           >>> index_n = {n_pages, n_checks}
           >>> index_n == {1000, 719}
-          True                                                   
-                      """,
+          True""",
           'hidden': False,
           'locked': False
         },

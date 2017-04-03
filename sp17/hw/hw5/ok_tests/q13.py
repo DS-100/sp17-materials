@@ -15,8 +15,7 @@ test = {
           >>> 0.27 < np.std(quick_estimates) < 0.29
           True
           >>> 0.7 < np.mean(quick_estimates) < 0.75             
-          True
-                      """,
+          True""",
           'hidden': False,
           'locked': False
         },
