@@ -9,7 +9,7 @@ test = {
           >>> data = np.array(np.matrix("1 2; 3 4; 5 6; 7 8"))
           >>> bipoly = BiPolyTrans(3)
           >>> poly_trans = bipoly.fit_transform(data)
-          >>> list(sum(poly_trans)) == [4, 16, 20, 84, 100, 120, 496, 580, 680, 800]
+          >>> set(sum(poly_trans)) == {4, 16, 20, 84, 100, 120, 496, 580, 680, 800}
           True
           >>> list(sum(poly_trans.T)) == [26, 220, 774, 1880]
           True""",
