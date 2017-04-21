@@ -1,12 +1,12 @@
 test = {
-  'name': 'Question 1',
+  'name': 'Question 2',
   'points': 1,
   'suites': [
     {
       'cases': [
         {  
           'code': r"""
-          >>> my_test_RMSE <= 40000
+          >>> my_test_RMSE <= 30000
           True""",
           'hidden': False,
           'locked': False
