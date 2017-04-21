@@ -1,0 +1,15 @@
+{
+  "name": "Discussion 12",
+  "endpoint": "cal/data100/sp17/disc12",
+  "src": [
+    "disc12.ipynb"
+  ],
+  "tests": {
+      "ok_tests/q*.py": "ok_test"
+  },
+  "protocols": [
+      "file_contents",
+      "grading",
+      "backup"
+  ]
+}
